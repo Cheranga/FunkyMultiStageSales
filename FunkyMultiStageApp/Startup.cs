@@ -25,6 +25,7 @@ namespace FunkyMultiStageApp
             }
 
             services.AddSingleton<ICreateNewSalesOrderService, CreateNewSalesOrderService>();
+            services.AddSingleton<IShippingService, ShippingService>();
         }
 
         private void RegisterValidators(IServiceCollection services)
